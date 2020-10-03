@@ -20,6 +20,7 @@ export default class Main extends Component {
     const novatarefas = [...tarefas];
     this.setState({
       tarefas: [...novatarefas, novaTarefa],
+      novaTarefa: '',
     });
   }
 
@@ -63,7 +64,7 @@ export default class Main extends Component {
             <li key={tarefa}>
               {tarefa}
               <div className="buttons">
-                <FaEdit className="edit" />
+
                 <FaTrash className="delete" onClick={(event) => this.handleDelete(event, indice)} />
               </div>
             </li>
