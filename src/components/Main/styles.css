@@ -52,3 +52,53 @@
 .form button:hover{
  filter: brightness(90%);
 }
+
+
+
+.lista-item{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.lista-item li{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: all 1s ease-out;
+}
+
+.lista-item li:hover{
+  background-color:rgb(27, 9, 134);
+
+  color: #fff;
+}
+
+.lista-item .buttons{
+  width: 100%;
+  max-width:  50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.lista-item .buttons .edit{
+  color: seagreen;
+}
+
+.lista-item .buttons .delete{
+  color: coral;
+}
+
+.lista-item .buttons:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
