@@ -1,10 +1,13 @@
 import React from 'react';
-
+import MainComponent from './components/Main';
 import './App.css';
 
-function App() {
+function App() { // Componentes StateLess( componentes sem estado que retornam apenas JSX)
   return (
-    <h1>  Teste </h1>
+    <>
+      <MainComponent />
+
+    </>
   );
 }
 
